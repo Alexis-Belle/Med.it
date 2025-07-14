@@ -29,6 +29,16 @@ function oceanwp_child_enqueue_parent_style() {
 }
 add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
 
+function enqueue_child_scripts() {
+  wp_enqueue_script(
+    'mon-script-js',
+    get_stylesheet_directory_uri() . '/scripts/script.js',
+    array('jquery'),
+    null,
+    true
+  );
+}
+add_action('wp_enqueue_scripts', 'enqueue_child_scripts');
 
 
 
@@ -38,3 +48,5 @@ function contact_btn( $items, $args ) {
 }
 
 add_filter( 'wp_nav_menu_items', 'contact_btn', 10, 2 );
+
+
