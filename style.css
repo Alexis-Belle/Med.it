@@ -11,12 +11,18 @@ Version: 1.0
 /* Parent stylesheet should be loaded from functions.php not using @import */
 
 
+#site-navigation-wrap .dropdown-menu {
+    display: flex;
+}
+
 .contact-btn{
-    display:inline-block;
+    display: flex;
+    align-items:center;
     background-color:white;
     padding:6px 16px;
     border-radius:6px;
 }
+
 .popup-overlay{
     position:fixed;
     width:100%;

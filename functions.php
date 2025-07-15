@@ -40,8 +40,6 @@ function enqueue_child_scripts() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_child_scripts');
 
-
-
 function contact_btn( $items, $args ) {
 	$items .= '<a href="/contact" class="contact-btn">Nous contacter</a>';
 	return $items;
