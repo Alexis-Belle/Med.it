@@ -10,18 +10,18 @@ Version: 1.0
 
 /* Parent stylesheet should be loaded from functions.php not using @import */
 
-
 #site-navigation-wrap .dropdown-menu {
     display: flex;
+    align-items: center;
 }
 
 .contact-btn{
-    display: flex;
-    align-items:center;
     background-color:white;
-    padding:6px 16px;
-    border-radius:6px;
+    border-radius:6px !important;
+    padding:6px 16px !important;
+    font-size: 15px;
 }
+
 
 .popup-overlay{
     position:fixed;
